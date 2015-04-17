@@ -6,15 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository" : {
+    "type": "git", 
+    "url": "git://github.com/carlosascari/express-flash-notification.git"
+  },
+  "bugs": "https://github.com/carlosascari/express-flash-notification/issues",
   "keywords": [
     "flash",
+    "flash message"
+    "flash notification"
     "notification",
     "express",
     "hogan",
     "mustache",
     "logicless"
   ],
-  "author": "Ascari Gutierrez Hermosillo",
+  "author": "Ascari Gutierrez Hermosillo <carlos.ascari.x@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "async": "^0.9.0"
