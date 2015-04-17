@@ -13,8 +13,8 @@
   "bugs": "https://github.com/carlosascari/express-flash-notification/issues",
   "keywords": [
     "flash",
-    "flash message"
-    "flash notification"
+    "flash message",
+    "flash notification",
     "notification",
     "express",
     "hogan",
