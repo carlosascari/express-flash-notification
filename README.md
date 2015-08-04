@@ -113,9 +113,12 @@ The local variables `type` and `message` will be set, depending on the type and 
 - **req.flash**(*object*)
   You can pass an object as the first argument, the object's properties will be exposed as local variables when rendering the notification template.
   The property `redirect` is reserved and functions just as you'd expect; a *Boolean* determines if it will refresh, or as a *String* you specify where to redirect to.
-  ```req.flash('info', 'if cats ruled the world', false)``` 
+  ```javascript
+  req.flash('info', 'if cats ruled the world', false)
+  ``` 
   is treated exactly the same as:
-  ```req.flash({
+  ```javascript
+  req.flash({
     type: 'info',
     message: 'if cats rules the world',
     redirect: false
@@ -253,7 +256,7 @@ This is my `flash.html` view template.
 <div class="alert flash {{alert_class}}" style="display:none">
 	<button type="button" class="close">×</button>
 	<i class="fa {{icon_class}} sign"></i><strong>{{type}}</strong> 
-	<span>{{message}}</span>
+	<span>{{{message}}}</span>
 </div>
 ```
 
@@ -291,7 +294,6 @@ app.use(require('express-flash-notification')(app, {
 				break;
 			}
 		}
-
 		callback(null, notification)
 	},
 	afterAllRender: function(htmlFragments, callback)
@@ -308,7 +310,6 @@ app.use(require('express-flash-notification')(app, {
 			'	}, 200)',
 			'</script>',
 		].join(''))
-
 		callback(null, htmlFragments.join(''))
 	},
 }))
