@@ -1,6 +1,6 @@
 {
   "name": "express-flash-notification",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Express.js flash notifications that works with any template engine",
   "main": "index.js",
   "scripts": {
