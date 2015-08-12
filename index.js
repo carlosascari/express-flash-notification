@@ -125,6 +125,7 @@ function Module (app, options)
 		else
 		{
 			var resultHTML = []	
+
 			async.each(
 				req.session[SESSION_NAME],
 				function(item, callback)
@@ -237,7 +238,16 @@ function Module (app, options)
 		/**
 		* Process Queued Notifications
 		*/
-		render(req, res, next)
+		if (req.__flash_flip)
+		{ 
+			req.__flash_flip = false
+			render(req, res, next)
+		}
+		else
+		{
+			req.__flash_flip = true
+			next()
+		}
 	} 
 	return FlashMiddleware
 }
