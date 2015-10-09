@@ -238,16 +238,7 @@ function Module (app, options)
 		/**
 		* Process Queued Notifications
 		*/
-		if (req.__flash_flip)
-		{ 
-			req.__flash_flip = false
-			render(req, res, next)
-		}
-		else
-		{
-			req.__flash_flip = true
-			next()
-		}
+		render(req, res, next)
 	} 
 	return FlashMiddleware
 }
