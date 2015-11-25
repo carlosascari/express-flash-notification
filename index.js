@@ -208,7 +208,7 @@ function Module (app, options)
 			}
 
 			// Queue Notification
-			if (notification) 
+			if (notification && req.session[SESSION_NAME]) 
 			{
 				req.session[SESSION_NAME].push(notification)
 			}
