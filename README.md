@@ -12,6 +12,8 @@ Notifications are stored in session and are removed once they have been rendered
   This allows you to control the presentation of all notifications with custom html/js.
 - **No need to refresh or redirect**, notifications can be rendered on the same request.
 
+If you want to see it in action: [express-flash-notification-example](https://github.com/carlosascari/express-flash-notification-example)
+
 ### Why?
 
 I realized [connect-flash](https://github.com/jaredhanson/connect-flash) required a template engine with conditional logic to test wether or not to show content. 
