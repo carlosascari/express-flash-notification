@@ -1,13 +1,13 @@
 {
   "name": "express-flash-notification",
-  "version": "0.3.1",
+  "version": "0.5.0",
   "description": "Express.js flash notifications that works with any template engine",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository" : {
-    "type": "git", 
+  "repository": {
+    "type": "git",
     "url": "git://github.com/carlosascari/express-flash-notification.git"
   },
   "bugs": "https://github.com/carlosascari/express-flash-notification/issues",
@@ -21,7 +21,7 @@
     "mustache",
     "logicless"
   ],
-  "author": "Ascari Gutierrez Hermosillo <carlos.ascari.x@gmail.com>",
+  "author": "Ascari Gutierrez Hermosillo <ascari.gtz@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "async": "^0.9.0"
